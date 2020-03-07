@@ -1,0 +1,272 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+}
+.wrap{
+	width: 100%;
+}
+nav{
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	height: 88px;
+}
+header>nav>.nav-Frist{
+	width: 100%;
+	height: 40px;
+	background-color: rgb(68,68,68);
+	line-height: 40px;
+	
+}
+header>nav>.nav-Frist>p{
+	
+	margin: 0 auto;
+	width: 1000px;
+	font-size: 12px;
+	color: #FFFFFF;
+	text-align: right;
+}
+header>nav>.nav-Second{
+	background-color: rgb(49,49,49);
+	
+}
+header>nav>.nav-Second>ul{
+	display: flex;
+	justify-content: space-between;
+	width: 1000px;
+	height: 44px;
+	margin: 0 auto;
+	line-height: 44px;
+}
+header>nav>.nav-Second>ul>li>a{
+	color: white;
+	transition: 0.5s;
+}
+header>nav>.nav-Second>ul>li>a:hover{
+	opacity: 0.65;
+}
+main>.contentBox1{
+	display: flex;
+	flex-direction: column;
+}
+main>.contentBox1>article{
+	position: relative;
+	text-align: center;
+	margin-bottom: 5px;
+	width: 100%;
+	height: 580px;
+}
+main>.contentBox1>article h2{
+	font-size: 56px;
+}
+main>.contentBox1>article:nth-child(1) h2{
+	color: white;
+}
+main>.contentBox1>article:nth-child(1) h3{
+	color: white;
+	
+}
+main>.contentBox1>article h3{
+	font-size: 26px;
+	font-weight: 300;
+	font-family: "SF Pro SC","SF Pro Display","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;
+	letter-spacing: 2px;
+	margin-bottom: 15px;
+}
+main>.contentBox1>article p{
+	margin: 18px auto;
+	font-size: 17px;
+	color: gray;
+}
+main>.contentBox1>article:nth-child(3) p{
+	letter-spacing: 2px;
+	color: red;
+	margin: 5px auto;
+}
+main>.content>article .buy{
+	font-size: 20px;
+	color: #6bf;
+}
+main>.content>article .buy>a{
+	font-weight: lighter;
+	font-size: 20px;
+	color: #6bf;
+	margin-left: 15px;
+	z-index: 5;
+}
+main>.content>article .buy>a:hover{
+	border-bottom: 1px solid #6bf;
+}
+.wrap>main>.contentBox1>article:nth-child(1){
+	background: url(../img/apple11pro.jpg) no-repeat center/cover;
+	margin-top: 84px;
+}
+main>.contentBox1>article:nth-child(2){
+	background: url(../img/apple11.jpg) no-repeat center/cover;
+}
+main>.contentBox1>article:nth-child(3){
+	background: url(../img/iwatch.jpg) no-repeat center/cover;
+}
+main>.content>article>.wrap-text{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	/* display: flex;
+	flex-direction: column;
+	align-items: center; */
+	/* margin: 50px auto; */
+	margin-top: 40px;
+	z-index: 4;
+}
+.wrap-bg{
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 580px;
+	z-index: 3;
+}
+.contentBox2{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+}
+main>.contentBox2>article{
+	position: relative;
+	width: 50%;
+	height: 580px;
+	box-sizing: border-box;
+}
+main>.contentBox2>article:nth-child(2n+1){
+	border-left: 10px solid white;
+	border-right: 10px solid white;
+	border-bottom: 10px solid white;
+}
+main>.contentBox2>article:nth-child(2n){
+	border-right: 10px solid white;
+	border-bottom: 10px solid white;
+}
+/* main>.contentBox2>article>.contentBox2-text{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 4;
+} */
+main>.contentBox2>article h2{
+	color: black;
+	font-size: 40px;
+	font-weight: 600;
+}
+main>.contentBox2>article h3{
+	color: black;
+	letter-spacing: 2px;
+	font: 400 16px "SF Pro SC","SF Pro Display","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;
+	margin-bottom: 10px;
+}
+/* main>.contentBox2>article>.contentBox2-text a{
+	color: #0070c9;
+	font-size: 17px;
+} */
+.contentBox2-bg{
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+	z-index: 3;
+}
+.contentBox2-01{
+	background: url(../img/ipad.jpg) no-repeat center;
+}
+.contentBox2-02{
+	background: url(../img/ipadpro.jpg) no-repeat center;
+}
+.contentBox2-03{
+	background: url(../img/iwatchbiaodai.jpg) no-repeat center;
+}
+.contentBox2-04{
+	background: url(../img/ios13.jpg) no-repeat center;
+}
+.contentBox2-05{
+	background: url(../img/watchos.jpg) no-repeat center;
+}
+.contentBox2-06{
+	background: url(../img/airpods.jpg) no-repeat center;
+}
+footer{
+	width: 100%;
+	background: rgb(245,245,247);
+}
+footer>.footerBox{
+	color: #86868b;
+	width: 980px;
+	margin: 0 auto;
+	padding: 20px;
+}
+footer>.footerBox>.footerTop>p{
+	margin-bottom: 25px;
+}
+footer>.footerBox{
+	font: 400 12px "SF Pro SC","HanHei SC","SF Pro Text","Myriad Set Pro","SF Pro Icons","Apple Legacy Chevron","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;;
+}
+footer>.footerBox>.footerMiddle{
+	display: flex;
+	border-top: 1px solid  #86868b;
+	padding-top: 25px;
+}
+footer>.footerBox>.footerMiddle>div{
+	flex: 1;
+}
+footer>.footerBox>.footerMiddle h5{
+	color: #1d1d1f;
+	font: 12px;
+	margin-bottom: 9px;
+}
+footer>.footerBox>.footerMiddle li{
+	font: 400 12px "SF Pro SC","HanHei SC","SF Pro Text","Myriad Set Pro","SF Pro Icons","Apple Legacy Chevron","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;;
+	margin-bottom: 9px;
+}
+footer>.footerBox>.footerMiddle li>a{
+	color: #86868b;
+}
+.h5{
+	margin-top: 38px;
+}
+footer>.footerBox>.footerBottom{
+	margin-top: 34px;
+}
+footer>.footerBox>.footerBottom>p{
+	padding-bottom: 8px;
+	border-bottom: 1px solid  #86868b;
+}
+footer>.footerBox>.footerBottom>p>a{
+	color: #66BBFF;
+}
+.footerBottom ul{
+	display: flex;
+	margin-left: 30px;
+}
+.footerBottom ul>li{
+	border-right: 1px solid  #86868b;
+	margin-right: 8px;
+	padding-right: 8px;
+}
+.footerBottom ul>li>a{
+	color: #1D1D1F
+}
+.aaaa{
+	margin: 10px 0;
+	display: flex;
+}
+footer>.footerBox a:hover{
+	text-decoration: underline;
+}
